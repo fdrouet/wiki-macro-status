@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.exoplatform.wiki</groupId>
+        <artifactId>wiki-macros</artifactId>
+        <version>4.0.0.Alpha1-SNAPSHOT</version>
+    </parent>
+    <artifactId>wiki-macro-status</artifactId>
+    <version>1.0.0-M1-SNAPSHOT</version>
+    <name>Wiki Macro Status</name>
+    <description>Wiki Macro - Status</description>
+    <!--<properties>-->
+    <!--<rendering.version>3.2</rendering.version>-->
+    <!--</properties>-->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.7.2</version>
+                <configuration>
+                    <includes>
+                        <include>**/IntegrationTests.java</include>
+                    </includes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>org.xwiki.rendering</groupId>
+            <artifactId>xwiki-rendering-syntax-xwiki2</artifactId>
+            <version>${org.xwiki.platform.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.xwiki.rendering</groupId>
+            <artifactId>xwiki-rendering-transformation-macro</artifactId>
+            <version>${org.xwiki.platform.version}</version>
+        </dependency>
+        <!-- Testing dependencies -->
+        <dependency>
+            <groupId>org.xwiki.rendering</groupId>
+            <artifactId>xwiki-rendering-test</artifactId>
+            <version>${org.xwiki.platform.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>

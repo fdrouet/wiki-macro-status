@@ -1,0 +1,10 @@
+.runTransformations
+.#-----------------------------------------------------
+.input|xwiki/2.0
+.# Test the macro in standalone mode
+.#-----------------------------------------------------
+{{status parameter="hello"}}my sentence{{/status}}
+.#-----------------------------------------------------
+.expect|xhtml/1.0
+.#-----------------------------------------------------
+<span style="background: red; border: 2px solid pink;color: black; font-weight: bold; padding: 4px 12px; -moz-border-radius:3px;-webkit-border-radius: 3px; display: inline-block; text-align:center;min-width:60px;">my sentence</span>
