@@ -19,7 +19,6 @@
  */
 package org.exoplatform.wiki.rendering.macro.status;
 
-import org.xwiki.properties.annotation.PropertyMandatory;
 import org.xwiki.properties.annotation.PropertyDescription;
 
 /**

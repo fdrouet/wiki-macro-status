@@ -19,19 +19,15 @@
  */
 package org.exoplatform.wiki.rendering.macro.status.internal;
 
-import javax.inject.Named;
-
 import java.util.Collections;
 import java.util.List;
-import java.util.Arrays;
 
+
+import javax.inject.Named;
 import org.exoplatform.wiki.rendering.macro.status.StatusMacroParameters;
-import org.wikimodel.wem.xhtml.handler.SpanTagHandler;
 import org.xwiki.component.annotation.Component;
 import org.xwiki.rendering.block.Block;
 import org.xwiki.rendering.block.RawBlock;
-import org.xwiki.rendering.block.WordBlock;
-import org.xwiki.rendering.block.ParagraphBlock;
 import org.xwiki.rendering.macro.AbstractMacro;
 import org.xwiki.rendering.macro.MacroExecutionException;
 import org.xwiki.rendering.syntax.Syntax;
